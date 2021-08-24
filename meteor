@@ -95,7 +95,9 @@ function install_dev_bundle {
     # test for unofficial supported architecture based dev_bundles
     if [ -n "$METEOR_UNIVERSAL_FLAG" ] ; then
         # Use bintray release downloads
-        DEV_BUNDLE_URL_ROOT="https://dl.bintray.com/4commerce-technologies-ag/meteor-universal/${METEOR_UNIVERSAL_FLAG}_dev_bundles/"
+
+        # reset to GitHub backup
+        DEV_BUNDLE_URL_ROOT="https://github.com/maudy2u/meteor/releases/download/bintray_replacement/"
     fi
 
     # test if we can download the dev_bundle tarball
